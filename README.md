@@ -1,0 +1,26 @@
+Hi there, I'm Kelvin Tan 👋
+I'm a freelance web developer with a passion for creating beautiful and functional websites and web applications. I specialize in building websites using modern web technologies such as React, JavaScript, TypeScript, Next.js, Node.js, Express, Redux, Git, Sanity, Tailwind CSS, Strapi, and MongoDB.
+
+My Tech Stack:
+React Icon React | JavaScript Icon JavaScript | TypeScript Icon TypeScript | Next.js Icon Next.js | Node.js Icon Node.js | Express Icon Express | Redux Icon Redux | Git Icon Git | Sanity Icon Sanity | Tailwind CSS Icon Tailwind CSS | Strapi Icon Strapi | MongoDB Icon MongoDB
+
+What I'm up to:
+I'm currently looking to collaborate with other developers on greater and impactful projects that can help me further enhance my skillset. Whether it's a simple website or a complex web application, I'm always up for a challenge!
+
+How to reach me:
+Feel free to contact me if you have any questions or if you're interested in collaborating on a project together. I'm always open to new ideas and challenges!
+
+<!--
+**TheKelvinT/TheKelvinT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
