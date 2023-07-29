@@ -12,7 +12,7 @@ I am a freelance Frontend Developer creating functional and visually appealing s
 
 
 ## Notable Projects 
-- :waffle:	**Cafe/Restaurant Website** - <a href="https://www.notakl.com" target="_blank"NOTA Cafe | Restaurant</a> 
+- :waffle:	**Cafe/Restaurant Website** - <a href="https://www.notakl.com" target="_blank">NOTA Cafe | Restaurant </a> 
 - :shopping_cart: **E-Commerce Website** - <a href="https://www.teckhongcoldstorage.com" target="_blank">Teck Hong Cold Storage</a> | <a href="https://github.com/TheKelvinT/Teck-Hong-CS" target="_blank">Project Repo</a>
 - :house_with_garden:	**Landing Page** - <a href="https://www.kyzenbina.com.my" target="_blank" >Kyzen Bina Interior Design</a> | <a href="https://github.com/TheKelvinT/kyzen-v2" target="_blank">Project Repo</a>
 	
