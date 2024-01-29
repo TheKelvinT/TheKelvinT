@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 
 const Sidebar = ({navlinks, selectedPage, setSelectedPage }) => {
   const selectedStyles = `text-primary`
-   console.log(selectedPage)
    
   return (
     
-    <div className="hidden md:flex flex-col  fixed bottom-[5%] z-50 left-7"  >
+    <div className="hidden lg:flex flex-col  fixed bottom-[5%] z-50 left-7"  >
       {navlinks.map(({ id, name, link, index }) => (
         <motion.div
+        key={id}
         initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

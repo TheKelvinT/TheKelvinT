@@ -12,7 +12,7 @@ const Socialbar = () => {
             hidden: { opacity: 0, x:25 },
             visible: { opacity: 1, x: 0 },
           }}
-          className='flex flex-col gap-y-3.5  items-center pr-10 pt-12
+          className='flex flex-col gap-y-3.5  items-center pr-10 pt-28 lg:pt-12
        text-social-gray'>
       <motion.a 
       target="_blank"

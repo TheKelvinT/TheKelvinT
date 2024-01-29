@@ -49,7 +49,7 @@ const Navbar = ({navlinks, selectedPage, setSelectedPage }) => {
     useEffect(() => {
       
       let handler = (e)=>{
-        if(!menuRef.current.contains(e.target)){
+        if(menuRef.current && !menuRef.current.contains(e.target)){
           setOpen(false);
         }      
       };
@@ -65,7 +65,7 @@ const Navbar = ({navlinks, selectedPage, setSelectedPage }) => {
 
     
   return (
-    <nav className="z-50 w-full fixed md:static px-6 py-4 lg:px-12 top-0 bg-black-100/10 backdrop-blur-sm border-b border-light-gray/20 ">
+    <nav className="z-50 w-full fixed lg:static px-6 py-4 lg:px-12 top-0 bg-black-100/10 backdrop-blur-sm border-b border-light-gray/20 ">
         <div className="flex items-center justify-between mx-auto ">
             
         <motion.img  initial="hidden"

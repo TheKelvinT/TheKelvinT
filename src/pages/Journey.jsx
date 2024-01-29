@@ -78,7 +78,7 @@ const Journey = () => {
   return (
     <section
     id="journey"
-    className="flex-grow flex items-start lg:w-[800px]  xl:w-[980px] overflow-hidden py-24 xl:py-48 mx-6 sm:mx-12 md:mx-24  lg:mx-auto  flex-col sm:justify-start text-light-gray border-b border-dark-gray  "
+    className="flex-grow flex items-start lg:w-[800px]  xl:w-[980px] overflow-hidden py-48 mx-6 sm:mx-12 md:mx-24  lg:mx-auto  flex-col sm:justify-start text-light-gray border-b border-dark-gray  "
   >
         {/* DESKTOP */}
         <motion.div
@@ -92,7 +92,7 @@ const Journey = () => {
         }}
          className='mb-10 flex w-full'>
             <PageIndex>04. </PageIndex>
-            <HeaderText>How did I get here</HeaderText>
+            <HeaderText>My Journey</HeaderText>
             <div className="w-full border-t mt-3 border-light-gray">
             </div>       
         </motion.div>

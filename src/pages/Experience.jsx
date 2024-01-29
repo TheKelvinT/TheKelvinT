@@ -110,7 +110,7 @@ const Experience = () => {
               }}
               className='mb-10 flex w-full'>
             <PageIndex>02. </PageIndex>
-            <HeaderText>Where I've Been</HeaderText>
+            <HeaderText>My Experience</HeaderText>
             <div className="w-full border-t mt-3 border-light-gray">
             </div>       
         </motion.div>

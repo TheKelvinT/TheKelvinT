@@ -8,7 +8,6 @@ import KyzenBina from '../assets/kyzen-bina.png'
 import AppleRedesign from '../assets/apple-redesign.png'
 import ctc from '../assets/ctc.png'
 import ctcCMS from '../assets/ctc-cms.png'
-
 import {motion} from 'framer-motion'
 
 const projectList = [
@@ -29,14 +28,26 @@ const projectList = [
     image: nota,
     description:'Cafe with great food and top notch customer service deserve a website with high quality customer experience.',
     description2:'Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation',
-    stack: ["Next.Js", "Typescript", "Sanity", "TailwindCSS", "Antd", "Vercel"]
+    stack: ["Next.Js", "Typescript", "Sanity", "TailwindCSS", "Vercel"]
   },
   {
     name: "E-Commerce Website",
-    image: nota,
+    image: teckhong,
     description:'Built a fully function E-commerce website for Teck Hong Cold Storage, a locally operated Fresh Mart at Sri Aman, Sarawak.',
     description2:'This project is built with the driving force to lead the digital initiative within Sri Aman and with customer experience as the main priority.',
     stack: ["React", "Redux", "Javascript", "Strapi", "TailwindCSS"]
+  },
+  {
+    name: "Clone Apple Website",
+    image: AppleRedesign,
+    description:'The main objective of this exercise is to enhance the following skillsets such as Typescript, Redux Toolkit, Stripe Payment API, Sanity Studio as the headless CMS(backend) and Next.JS Auth .',
+    stack: ["NextJS", "Stripe", "Typescript", "Sanity", "Redux"]
+  },
+  {
+    name: "Interior Design Website",
+    image: KyzenBina,
+    description:'My first ever freelance project with plain HTML, CSS and Javascript. A simple landing page for the Kyzen Bina to showcase some of the past projects.',
+    stack: ["Javascript", "CSS", "HTML", "Bootstrap", "Figma"]
   },
 
 ]
@@ -62,79 +73,81 @@ const Projects = () => {
         </motion.div>
 
         <div className='flex flex-col gap-y-24'>
-        <div className='relative z-1 sm:flex hidden sm:visible'>
-            <motion.div initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
-                  transition={{ duration: 0.5 , delay:0.5 }}
-                  variants={{
-                    hidden: { opacity: 0, x: -75 },
-                    visible: { opacity: 1 , x: 0}
-                  }} className="text-4xl h-auto relative ">
-              <img src={nota} alt="" className='relative h-auto sm:w-[450px] md:w-[650px] '  /> 
-              <div className="absolute top-0 left-0 h-full w-full bg-black-70 opacity-70 ease-out transition duration-700    mix-blend-multiply hover:opacity-0 "></div>
-              
-            </motion.div>
-            <div className='h-auto w-[324.2px]'>
+              {projectList.map((project, index) => (
+                 <div className='relative z-1 sm:flex hidden sm:visible'>
+                 <motion.div initial="hidden"
+                       whileInView="visible"
+                       viewport={{ once: true, amount: 0.5 }}
+                       transition={{ duration: 0.5 , delay:0.5 }}
+                       variants={{
+                         hidden: { opacity: 0, x: -75 },
+                         visible: { opacity: 1 , x: 0}
+                       }} className="text-4xl h-auto relative ">
+                   <img src={project.image} alt="" className='relative h-auto sm:w-[450px] md:w-[650px] '  /> 
+                   <div className="absolute top-0 left-0 h-full w-full bg-black-70 opacity-70 ease-out transition duration-700    mix-blend-multiply hover:opacity-0 "></div>
+                   
+                 </motion.div>
+                 <div className='h-auto w-[324.2px]'>
+     
+                 </div>
+                   <div className="absolute flex inset-y-0  right-0 z-10 w-auto lg:max-w-[382px] ">
+                   <div className=" h-full flex flex-col justify-center text-end text-xs md:text-sm"> 
+                    <motion.p initial="hidden"
+                       whileInView="visible"
+                       viewport={{ once: true, amount: 0.5 }}
+                       transition={{ duration: 0.5 , delay:0.35 }}
+                       variants={{
+                         hidden: { opacity: 0, x: 75 },
+                         visible: { opacity: 1 , x: 0}
+                       }} className=' text-sm md:text-base font-spacemono mb-1 text-primary text-wrap'>Freelance</motion.p>
+                   <motion.a 
+                   initial="hidden"
+                   whileInView="visible"
+                   viewport={{ once: true, amount: 0.5 }}
+                   transition={{ duration: 0.5 , delay:0.5 }}
+                   variants={{
+                     hidden: { opacity: 0, x: 75 },
+                     visible: { opacity: 1 , x: 0}
+                   }}
+               className=' font-bold  text-xl md:text-2xl text-gray-50 mb-6' href={project.link|| '#'}>{project.name}</motion.a>
+                   <motion.a
+                   initial="hidden"
+                   target='_blank'
+                   whileInView="visible"
+                   viewport={{ once: true, amount: 0.5 }}
+                   transition={{ duration: 0.5 , delay:0.65 }}
+                   variants={{
+                     hidden: { opacity: 0, x: 75 },
+                     visible: { opacity: 1 , x: 0}
+                   }}
+                   className='text-start py-2 px-4 md:py-4 md:px-8 bg-black-70 mb-6 max-w-[382px] space-y-2' >
+                  
+               <p>{project.description}</p>
+                   <p>{project.description2}</p>
+                   </motion.a>
+                   
+                   <motion.div initial="hidden"
+                   whileInView="visible"
+                   viewport={{ once: true, amount: 0.5 }}
+                   transition={{ duration: 0.8 , delay:0.9 }}
+                   variants={{
+                     hidden: { opacity: 0, x: 75 },
+                     visible: { opacity: 1 , x: 0}
+                   }}  className='mb-4'>
+                   <ul className='flex justify-end gap-x-6 text-xs font-spacemono whitespace-nowrap '>
+                    {project.stack.map((stack, index) => (
+                      <li>{stack}</li>
+                    ))
+                    }
+                   </ul>
+                   </motion.div>
+                 </div>
+                 </div>
+               </div>
+              ))}
+       
 
-            </div>
-              <div className="absolute flex inset-y-0  right-0 z-10 w-auto lg:max-w-[382px] ">
-              <div className=" h-full flex flex-col justify-center text-end text-xs md:text-sm"> 
-               <motion.p initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
-                  transition={{ duration: 0.5 , delay:0.35 }}
-                  variants={{
-                    hidden: { opacity: 0, x: 75 },
-                    visible: { opacity: 1 , x: 0}
-                  }} className=' text-sm md:text-base font-spacemono mb-1 text-primary text-wrap'>Freelance</motion.p>
-              <motion.a 
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 , delay:0.5 }}
-              variants={{
-                hidden: { opacity: 0, x: 75 },
-                visible: { opacity: 1 , x: 0}
-              }}
-          className=' font-bold  text-xl md:text-2xl text-gray-50 mb-6' href='https://www.notakl.com'>NOTA Cafe Website</motion.a>
-              <motion.a
-              initial="hidden"
-              target='_blank'
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 , delay:0.65 }}
-              variants={{
-                hidden: { opacity: 0, x: 75 },
-                visible: { opacity: 1 , x: 0}
-              }}
-              className='text-start py-2 px-4 md:py-4 md:px-8 bg-black-70 mb-6 max-w-[382px] space-y-2' >
-             
-              <p>Cafe with great food and top notch customer service deserve a website with high quality customer experience.</p>
-              <p>Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation </p>
-              </motion.a>
-              
-              <motion.div initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.8 , delay:0.9 }}
-              variants={{
-                hidden: { opacity: 0, x: 75 },
-                visible: { opacity: 1 , x: 0}
-              }}  className='mb-4'>
-              <ul className='flex justify-end gap-x-6 text-xs font-spacemono whitespace-nowrap '>
-                <li>Next.Js</li>
-                <li>TypeScript</li>
-                <li>Sanity</li>
-                <li>TailwindCSS</li>
-               
-              </ul>
-              </motion.div>
-            </div>
-            </div>
-          </div>
-
-          <div className='relative z-1 sm:flex hidden sm:visible'>
+          {/* <div className='relative z-1 sm:flex hidden sm:visible'>
             <motion.div initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
@@ -405,7 +418,7 @@ const Projects = () => {
               </motion.div>
             </div>
             </div>
-          </div>
+          </div> */}
           
           
 

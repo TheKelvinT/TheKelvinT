@@ -58,7 +58,7 @@ function App() {
             }
           });
         },
-        { threshold: 0.5 }
+        { threshold: 0.3 }
       );
 
       sections.forEach(section => {
@@ -88,8 +88,6 @@ function App() {
       />
       
       <Socialbar/>
-      {/* <ScrollDownButton
-      isTopOfPage={isTopOfPage}/> */}
       <Hero/>
       </div>
  
