@@ -2,21 +2,21 @@ import React from "react"
 
 const DesktopCard = ({ item }) => {
   return (
-    <div className="h-full w-[80vw] flex items-center justify-center bg-none relative">
+    <div className="h-full  w-[1400px] flex items-center justify-between xl:justify-center bg-none relative">
       <a href={item?.link} target="_blank">
         <div className="text-4xl h-auto relative">
           <img
             src={item.img}
             alt=""
-            className="relative h-auto sm:w-[450px] md:w-[650px] "
+            className="relative h-auto sm:w-[450px] lg:w-[650px] "
           />
 
           <div className="absolute top-0 left-0 h-full w-full bg-black-70 opacity-70 ease-out transition duration-700    mix-blend-multiply hover:opacity-0 "></div>
         </div>
       </a>
-      <div className="absolute flex inset-y-0  right-24 z-10 w-auto lg:max-w-[382px] ">
-        <div className=" h-full flex flex-col justify-center text-end text-xs md:text-sm">
-          <p className=" text-sm md:text-base font-spacemono mb-1 text-primary text-wrap">
+      <div className="absolute flex inset-y-0 right-[500px] lg:right-72 xl:right-12 z-10 w-auto sm:max-w-[400px]  md:max-w-[382px]">
+        <div className="h-full flex flex-col justify-center text-end text-xs md:text-sm">
+          <p className="text-sm md:text-base font-spacemono mb-1 text-primary text-wrap">
             {item.job}
           </p>
           <div className=" font-bold  text-xl md:text-2xl text-gray-50 mb-6">

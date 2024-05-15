@@ -105,7 +105,9 @@ const Journey = () => {
         }}
         className="mb-8 text-sm pb-[499px]"
       >
-        Coming Soon
+        Coming Soon Phasellus consectetuer vestibulum elit. Nam pretium turpis
+        et arcu. Phasellus magna. Aliquam erat volutpat. Quisque rutrum. Nam
+        pretium turpis et arcu.
       </motion.p>
 
       {/* 

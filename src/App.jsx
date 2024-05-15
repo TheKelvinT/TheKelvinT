@@ -8,9 +8,10 @@ import Hero from "./pages/Hero"
 import Journey from "./pages/Journey"
 import Layout from "./pages/Layout"
 import Navbar from "./pages/Navbar"
-import Projects from "./pages/Projects"
 import Sidebar from "./components/Sidebar"
+Projects
 import { motion } from "framer-motion"
+import Projects from "./pages/Projects"
 
 const navlinks = [
   { id: "00", name: "Home", link: "home" },
