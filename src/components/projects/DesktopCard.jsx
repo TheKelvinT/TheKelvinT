@@ -4,14 +4,14 @@ const DesktopCard = ({ item }) => {
   return (
     <div className="h-full  w-[1400px] flex items-center justify-between xl:justify-center bg-none relative">
       <a href={item?.link} target="_blank">
-        <div className="text-4xl h-auto relative">
+        <div className="text-4xl h-auto relative ">
           <img
             src={item.img}
             alt=""
-            className="relative h-auto sm:w-[450px] lg:w-[650px] "
+            className="relative h-auto sm:w-[450px] lg:w-[650px] max-h-[460px] object-contain object-right"
           />
 
-          <div className="absolute top-0 left-0 h-full w-full bg-black-70 opacity-70 ease-out transition duration-700    mix-blend-multiply hover:opacity-0 "></div>
+          <div className="absolute top-0 left-0 h-full w-full bg-black-100 opacity-70 ease-out transition duration-700    mix-blend-multiply hover:opacity-0 "></div>
         </div>
       </a>
       <div className="absolute flex inset-y-0 right-[500px] lg:right-72 xl:right-12 z-10 w-auto sm:max-w-[400px]  md:max-w-[382px]">
