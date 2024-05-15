@@ -6,8 +6,8 @@ import TextTransition from "react-text-transition"
 const Hero = () => {
   const TEXTS = [
     "Transforming web design into reality.",
-    "Bridging the Gap Between Design and Development.",
-    "Bringing Creative Web Concepts to Life.",
+    "Bridging design and development.",
+    "Bringing creative web concepts to life.",
   ]
   const [index, setIndex] = useState(0)
   useEffect(() => {
