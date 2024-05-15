@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const DesktopCard = ({ item }) => {
   return (
     <div className="h-full  w-[1400px] flex items-center justify-between xl:justify-center bg-none relative">
-      <Link to={item?.link} target="_blank">
+      <Link to={item?.link}>
         <div className="text-4xl h-auto relative ">
           <img
             src={item.img}
