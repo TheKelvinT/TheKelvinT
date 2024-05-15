@@ -30,42 +30,6 @@ const design = [
   { id: "02", name: "Figma" },
 ]
 
-// function ScrollContainer() {
-//   const x = useMotionValue(0)
-//   const xMax = useTransform(x, [-100, 0, 100], [-2000, 0, 2000])
-
-//   return (
-//     <AnimatePresence>
-//       <motion.div
-//         className="flex flex-row gap-x-3 md:gap-x-8 overflow-x-scroll"
-//         style={{ x }}
-//       >
-//         {[Award1, Award1, Award1, Award1].map((image, index) => (
-//           <motion.img
-//             src={image}
-//             alt=""
-//             className="w-[220px] h-auto"
-//             key={index}
-//             initial={{ opacity: 0, x: 500 }}
-//             animate={{ opacity: 1, x: 0, transition: { duration: 1, delay: 0.3 } }}
-//             exit={{ opacity: 0, x: 500 }}
-//           />
-//         ))}
-//       </motion.div>
-
-//       <motion.div
-//         className="fixed bottom-0 right-0 mb-3 mr-3"
-//         whileHover={{ scale: 1.2 }}
-//         whileTap={{ x: xMax }}
-//       >
-//         <motion.svg width="24" height="24" viewBox="0 0 24 24">
-//           <motion.path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
-//         </motion.svg>
-//       </motion.div>
-//     </AnimatePresence>
-//   )
-// }
-
 const Journey = () => {
   const [ref, inView] = useInView({
     threshold: 0,
@@ -90,7 +54,7 @@ const Journey = () => {
         className="mb-10 flex w-full"
       >
         <PageIndex>04. </PageIndex>
-        <HeaderText>How did I get here</HeaderText>
+        <HeaderText>Blogs and Articles</HeaderText>
         <div className="w-full border-t mt-3 border-light-gray"></div>
       </motion.div>
 

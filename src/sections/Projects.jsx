@@ -27,7 +27,7 @@ const items = [
     desc2:
       "Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation",
     img: erp,
-    link: "https://www.notakl.com",
+    link: "/projects/1",
     technologies: [
       "Next.js",
       "Typescript",

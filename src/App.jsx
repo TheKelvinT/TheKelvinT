@@ -1,27 +1,9 @@
-import { useState, useEffect } from "react"
-import Socialbar from "./components/SocialBar"
-import About from "./pages/About"
-import Contact from "./pages/Contact"
-import Experience from "./pages/Experience"
-import Footer from "./pages/Footer"
-import Hero from "./pages/Hero"
-import Journey from "./pages/Journey"
-import Layout from "./pages/Layout"
-import Navbar from "./pages/Navbar"
-import Sidebar from "./components/Sidebar"
-Projects
-import { motion } from "framer-motion"
-import Projects from "./pages/Projects"
+import { useEffect, useState } from "react"
 
-const navlinks = [
-  { id: "00", name: "Home", link: "home" },
-  { id: "01", name: "About", link: "about" },
-  { id: "02", name: "Experience", link: "experience" },
-  { id: "03", name: "Projects", link: "projects" },
-  { id: "04", name: "Journey", link: "journey" },
-  { id: "05", name: "Contact", link: "contact" },
-]
-
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Layout from "./layout/Layout"
+import HomePage from "./pages/HomePage"
+import ProjectDetail from "./pages/ProjectDetail"
 function App() {
   const [selectedPage, setSelectedPage] = useState("home")
   const [isTopOfPage, setIsTopOfPage] = useState(true)
@@ -112,7 +94,7 @@ function App() {
             }
           })
         },
-        { threshold: 0.1 }
+        { threshold: 0.15 }
       )
 
       sections.forEach((section) => {
@@ -141,37 +123,21 @@ function App() {
   }, [])
 
   return (
-    <div className="App bg-black-100 ">
-      <div className="h-screen md:h-full">
-        <Navbar
-          navlinks={navlinks}
-          selectedPage={selectedPage}
-          setSelectedPage={setSelectedPage}
-        />
-        <Sidebar
-          navlinks={navlinks}
-          selectedPage={selectedPage}
-          setSelectedPage={setSelectedPage}
-        />
-
-        <Socialbar />
-        {/* <ScrollDownButton
-      isTopOfPage={isTopOfPage}/> */}
-        <Hero />
-      </div>
-
-      <About />
-
-      <Experience />
-
-      <Projects />
-
-      <Journey />
-
-      <Contact />
-
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          element={
+            <Layout
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          }
+        >
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
