@@ -56,7 +56,7 @@ function App() {
             }
           })
         },
-        { threshold: 0.25 }
+        { threshold: 0.1 }
       )
 
       sections.forEach((section) => {
