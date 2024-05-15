@@ -73,7 +73,7 @@ function App() {
   }, [])
 
   return (
-    <div className="App bg-black-100">
+    <div className="App bg-black-100 ">
       <div className="h-screen md:h-full">
         <Navbar
           navlinks={navlinks}
