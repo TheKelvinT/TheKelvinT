@@ -1,8 +1,22 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
+import TextTransition from "react-text-transition"
 
 const Hero = () => {
+  const TEXTS = [
+    "Transforming web design into reality.",
+    "Bridging the Gap Between Design and Development.",
+    "Bringing Creative Web Concepts to Life.",
+  ]
+  const [index, setIndex] = useState(0)
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3500 // every 3 seconds
+    )
+    return () => clearTimeout(intervalId)
+  }, [])
   return (
     <section
       id="home"
@@ -46,7 +60,7 @@ const Hero = () => {
           }}
           className="text-3xl md:text-5xl  md:leading-normal lg:text-7xl lg:leading-tight font-bold leading-tight mb-2"
         >
-          <TypeAnimation
+          {/* <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
               "Transforming web design into reality.",
@@ -59,7 +73,8 @@ const Hero = () => {
             wrapper="span"
             speed={50}
             repeat={Infinity}
-          />
+          /> */}
+          <TextTransition>{TEXTS[index % TEXTS.length]}</TextTransition>
         </motion.h2>
         <motion.p
           initial="hidden"
