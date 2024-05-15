@@ -73,7 +73,7 @@ const Projects = () => {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="mb-10 flex w-full lg:w-[800px]  xl:w-[980px] pt-24 xl:pt-48  mx-6 sm:mx-12 md:mx-24  lg:mx-auto lg:flex sm:items-center sm:justify-start text-light-gray"
+            className="mb-10 flex w-full lg:w-[800px]  xl:w-[980px]  mx-6 sm:mx-12 md:mx-24  lg:mx-auto lg:flex sm:items-center sm:justify-start text-light-gray"
           >
             <PageIndex>03. </PageIndex>
             <HeaderText>What I've built</HeaderText>
