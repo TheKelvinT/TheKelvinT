@@ -4,7 +4,7 @@ import PageIndex from "../components/PageIndex"
 import { motion } from "framer-motion"
 const Contact = () => {
   return (
-    <section id="contact" className=" py-24 xl:py-48 flex justify-center  ">
+    <section id="contact" className=" py-48 flex justify-center  ">
       <div className="lg:max-w-[980px] mx-6 md:mx-12 lg:mx-24 xl:mx-40 text-light-gray">
         <motion.div
           initial="hidden"
