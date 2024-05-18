@@ -15,7 +15,7 @@ const navlinks = [
 const Layout = ({ selectedPage, setSelectedPage }) => {
   return (
     <div className="App bg-black-100 ">
-      <div className="h-screen md:h-full">
+      <div>
         <Navbar
           navlinks={navlinks}
           selectedPage={selectedPage}
