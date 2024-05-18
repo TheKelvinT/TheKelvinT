@@ -87,11 +87,14 @@ const Hero = () => {
           }}
           className=" text-sm md:text-base max-w-[580px] md:leading-normal leading-normal"
         >
-          I'm a front-end web developer with a passion for building great online
+          {/* I'm a front-end web developer with a passion for building great online
           experiences. With a solid foundation in HTML, CSS, JavaScript, and
           other relevant technologies, I enjoy bringing ideas to life and
           creating functional and visually appealing websites. Let's make
-          something awesome together!
+          something awesome together! */}
+          I'm a software engineer specializing in front-end development, open to
+          freelance and full-time opportunities anywhere. Let's build something
+          amazing together!
         </motion.p>
       </div>
     </section>

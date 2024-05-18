@@ -190,7 +190,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-24 xl:py-48 sm:mx-12 mx-6 md:mx-24 text-light-gray"
+      className="pt-24 xl:pt-48 sm:mx-12 mx-6 md:mx-24 text-light-gray"
       // className="flex-grow flex items-start lg:w-[800px]  xl:w-[980px]  py-24 xl:py-48 mx-6 sm:mx-12 md:mx-24  lg:mx-auto  flex-col sm:justify-start text-light-gray  "
     >
       <motion.div
