@@ -20,97 +20,86 @@ import MobileCard from "../components/projects/MobileCard"
 const items = [
   {
     id: 1,
-    job: "Freelance",
-    title: "NOTA Restaurant & Cafe Website",
+    job: "Business Management System",
+    title: " Enterprise Resource Planning (ERP)",
     desc1:
-      "Cafe with great food and top notch customer service deserve a website with high quality customer experience.",
+      "Built to streamline business operations with features like asset management, task management, and secure authentication. Its intuitive admin dashboard provides real-time insights and control, enhancing decision-making.",
     desc2:
-      "Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation",
+      "Implemented live notifications keep users updated on important events. Ongoing development aims to add new functionalities, making it an adaptable solution for businesses to optimize resource management and efficiency.",
     img: erp,
-    link: "/projects/1",
+    link: "",
     technologies: [
-      "Next.js",
+      "React.js",
       "Typescript",
-      "Sanity",
+      "Redux Toolkit",
+      "Vite",
       "TailwindCSS",
       "Ant Design",
     ],
   },
   {
     id: 2,
-    job: "Freelance",
-    title: "NOTA Restaurant & Cafe Website",
+    job: "E-Commerce",
+    title: "Changi Travel Circle",
     desc1:
-      "Cafe with great food and top notch customer service deserve a website with high quality customer experience.",
+      "Changi Airport Group's B2B program connecting global travel trade partners with Changi Airport.  Offering an array of features catering to both B2B and B2C users such as personalized favorites, convenient downloads, and efficient account management, alongside a comprehensive global search function. ",
     desc2:
-      "Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation",
+      "Leveraging our CMS, content is dynamically tailored to each user's preferences and demographics, ensuring an engaging and personalized experience for all.",
     img: ctc,
-    link: "https://www.notakl.com",
+    link: "https://travelcircle.changiairport.com/",
     technologies: [
-      "Next.js",
-      "Typescript",
-      "Sanity",
-      "TailwindCSS",
-      "Ant Design",
+      "Nuxt.js",
+      "Vue",
+      "Element UI",
+      "SCSS",
+      "Google Tag Manager",
+    ],
+    actions: [
+      {
+        name: "View Website",
+        link: "https://travelcircle.changiairport.com/",
+      },
     ],
   },
   {
     id: 3,
-    job: "Freelance",
-    title: "NOTA Restaurant & Cafe Website",
+    job: "Content Management System",
+    title: "Changi Travel Circle CMS",
     desc1:
-      "Cafe with great food and top notch customer service deserve a website with high quality customer experience.",
+      "Equips administrators with powerful features for effective user data management while maintaining high security standards. Automated scheduling promptly eliminates expired promotions, ensuring continuous user engagement.",
     desc2:
-      "Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation",
+      "A key highlight is dynamic content segmentation, delivering personalized content based on user demographics and behavior, distinguishing our CMS as a pioneer in travel industry content management.",
     img: ctccms,
-    link: "https://www.notakl.com",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "Sanity",
-      "TailwindCSS",
-      "Ant Design",
-    ],
+    link: "",
+    technologies: ["Vue.js", "Vuex", "Typescript", "Element UI", "SCSS"],
   },
   {
     id: 4,
-    job: "Freelance",
-    title: "NOTA Restaurant & Cafe Website",
+    job: "Business Management System",
+    title: "Supply Chain Management Platform",
     desc1:
-      "Cafe with great food and top notch customer service deserve a website with high quality customer experience.",
+      " With key features including Inventory Management, Supplier Management, Procurement, and Store Stock Management, this platform offers comprehensive tools to streamline operations and enhance efficiency.",
     desc2:
-      "Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation",
+      "From tracking inventory levels to managing supplier relationships and procurement processes, this platform handles complex functionality with ease, empowering businesses to stay competitive in today's fast-paced market.",
     img: scm,
-    link: "https://www.notakl.com",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "Sanity",
-      "TailwindCSS",
-      "Ant Design",
-    ],
+    link: "",
+    technologies: ["Vue.js", "Vuex", "Typescript", "Element UI", "SCSS"],
   },
   {
     id: 5,
-    job: "Freelance",
-    title: "NOTA Restaurant & Cafe Website",
+    job: "Human Resource Management System",
+    title: "Retail HRMS System",
     desc1:
-      "Cafe with great food and top notch customer service deserve a website with high quality customer experience.",
+      "Comprehensive solution tailored to streamline HR processes. With features including hierarchy management, employee payslip generation, staff and shift management, duty planning, and appraisal document management, this system optimizes HR operations.",
     desc2:
-      "Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation",
+      "From organizing employee hierarchies to efficiently handling payslips and appraisal documents, our platform simplifies complex HR tasks, empowering businesses to manage their workforce effectively and enhance productivity.",
     img: hrms,
-    link: "https://www.notakl.com",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "Sanity",
-      "TailwindCSS",
-      "Ant Design",
-    ],
+    link: "",
+    technologies: ["Angular", "Typescript", "Bootstrap", "Rxjs"],
   },
   {
     id: 6,
-    job: "Freelance",
+    job: "Reservation System",
     title: "NOTA Restaurant & Cafe Website",
     desc1:
       "Cafe with great food and top notch customer service deserve a website with high quality customer experience.",
@@ -128,57 +117,15 @@ const items = [
   },
   {
     id: 6,
-    job: "Freelance",
-    title: "NOTA Restaurant & Cafe Website",
+    job: "E-Commerce",
+    title: "Teck Hong Cold Storage",
     desc1:
-      "Cafe with great food and top notch customer service deserve a website with high quality customer experience.",
+      "Built a fully function E-commerce website for Teck Hong Cold Storage, a locally operated Fresh Mart at Sri Aman, Sarawak.",
     desc2:
-      "Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation",
+      "This project is built with the driving force to lead the digital initiative within Sri Aman and with customer experience as the main priority.",
     img: teckhong,
-    link: "https://www.notakl.com",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "Sanity",
-      "TailwindCSS",
-      "Ant Design",
-    ],
-  },
-  {
-    id: 7,
-    job: "Freelance",
-    title: "NOTA Restaurant & Cafe Website",
-    desc1:
-      "Cafe with great food and top notch customer service deserve a website with high quality customer experience.",
-    desc2:
-      "Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation",
-    img: KyzenBina,
-    link: "https://www.notakl.com",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "Sanity",
-      "TailwindCSS",
-      "Ant Design",
-    ],
-  },
-  {
-    id: 8,
-    job: "Freelance",
-    title: "NOTA Restaurant & Cafe Website",
-    desc1:
-      "Cafe with great food and top notch customer service deserve a website with high quality customer experience.",
-    desc2:
-      "Nota Cafe Website uses technologies such as Next.JS for SEO enhancement and navigation through different pages such as Menu, Career, Blog and Reservation",
-    img: pd,
-    link: "https://www.notakl.com",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "Sanity",
-      "TailwindCSS",
-      "Ant Design",
-    ],
+    link: "",
+    technologies: ["React", "Redux", "Strapi", "TailwindCSS"],
   },
 ]
 const Projects = () => {
@@ -216,7 +163,7 @@ const Projects = () => {
         animate={{ y: "0%" }}
         transition={{ duration: 1 }}
       >
-        <div className="h-[600vh] relative hidden sm:block" ref={ref}>
+        <div className="h-[1500vh] relative hidden sm:block" ref={ref}>
           <div className="sticky top-0  h-screen gap-4 items-center overflow-hidden flex">
             <motion.div style={{ x }} className="flex ">
               {items.map((item) => (

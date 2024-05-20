@@ -9,14 +9,14 @@ const DesktopCard = ({ item }) => {
           <img
             src={item.img}
             alt=""
-            className="relative h-auto sm:w-[450px] lg:w-[650px] max-h-[460px] object-contain object-right"
+            className="relative h-auto sm:w-[550px] lg:w-[650px] max-h-[460px] object-contain object-right"
           />
 
           <div className="absolute top-0 left-0 h-full w-full bg-black-100 opacity-70 ease-out transition duration-700    mix-blend-multiply hover:opacity-0 "></div>
         </div>
       </Link>
-      <div className="absolute flex inset-y-0 right-[500px] lg:right-72 xl:right-12 z-10 w-auto sm:max-w-[400px]  md:max-w-[382px]">
-        <div className="h-full flex flex-col justify-center text-end text-xs md:text-sm">
+      <div className="absolute flex inset-y-0 right-[660px] lg:right-96 xl:right-12 z-10 w-auto ">
+        <div className="h-full flex flex-col justify-center text-end text-xs md:text-sm sm:max-w-[430px]  lg:max-w-[482px]">
           <p className="text-sm md:text-base font-spacemono mb-1 text-primary text-wrap">
             {item.job}
           </p>
@@ -46,7 +46,7 @@ const DesktopCard = ({ item }) => {
             }}
             className="flex space-x-5 item-center justify-end"
           >
-            <a href="" className="text-end">
+            {/* <a href="" className="text-end">
               <svg
                 width="16"
                 height="16"
@@ -73,7 +73,28 @@ const DesktopCard = ({ item }) => {
                   fill="#C6D1F1"
                 />
               </svg>
-            </a>
+            </a> */}
+            {item.actions
+              ? item.actions.map((action) => (
+                  <a
+                    href={action.link}
+                    target="_blank"
+                    key={action.name}
+                    className="flex gap-4 items-center py-2 px-4 hover:border-primary border rounded hover:text-primary  text-sm transition duration-500"
+                  >
+                    {action.name}
+                    <svg
+                      className="fill-current"
+                      width="15"
+                      height="7"
+                      viewBox="0 0 15 7"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M11.5 7L10.438 5.938L12.125 4.25H0V2.75H12.125L10.438 1.062L11.5 0L15 3.5L11.5 7Z" />
+                    </svg>
+                  </a>
+                ))
+              : null}
           </div>
         </div>
       </div>
