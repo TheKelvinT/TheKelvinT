@@ -30,7 +30,7 @@ const Socialbar = () => {
 <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="23" stroke="#C6D1F1"/>
 </svg>
 <motion.a target="_blank"
-href="https://www.linkedin.com/in/kelvint95/"
+href="https://www.linkedin.com/in/the-kelvin-tan/"
 whileHover={{scale:1.5}}
 whileTap={{scale:0.9}}
 transition={{ duration: 0.3}}

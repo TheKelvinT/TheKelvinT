@@ -23,7 +23,7 @@ const Contact = () => {
 
         <div className="flex flex-col items-center gap-y-6 text-dark-gray font-spacemono text-base ">
           <motion.a
-            href="https://www.linkedin.com/in/kelvint-dev/"
+            href="https://www.linkedin.com/in/the-kelvin-tan/"
             target="_blank"
             whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
             whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
