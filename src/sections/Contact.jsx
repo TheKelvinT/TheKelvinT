@@ -18,10 +18,10 @@ const Contact = () => {
           className="mb-8 flex flex-col items-center gap-4"
         >
           <PageIndex>05. Get in Touch</PageIndex>
-          <HeaderText>
-            Interested in Collaborating?{" "}
+          <div className="font-bold leading-8 text-2xl mr-3 inline-block align-text-bottom text-center">
+            Interested in Collaborating?
             <span className="hidden md:block">Reach Out!</span>
-          </HeaderText>
+          </div>
         </motion.div>
 
         <div className="flex flex-col items-center gap-y-8 text-dark-gray font-spacemono text-base ">
