@@ -77,7 +77,7 @@ function App() {
       { id: "about", elem: document.querySelector("#about") },
       { id: "experience", elem: document.querySelector("#experience") },
       { id: "projects", elem: document.querySelector("#projects") },
-      { id: "journey", elem: document.querySelector("#journey") },
+      // { id: "journey", elem: document.querySelector("#journey") },
       { id: "contact", elem: document.querySelector("#contact") },
     ]
 
@@ -86,18 +86,21 @@ function App() {
     if (window) {
       observer = new IntersectionObserver(
         (entries) => {
-          entries.forEach((entry) => {
+          entries.map((entry) => {
             if (entry.isIntersecting) {
+              console.log(
+                sections.find((section) => section.elem === entry.target).id
+              )
               setSelectedPage(
                 sections.find((section) => section.elem === entry.target).id
               )
             }
           })
         },
-        { threshold: 0.15 }
+        { threshold: 0.03 }
       )
 
-      sections.forEach((section) => {
+      sections.map((section) => {
         if (section.elem) {
           observer.observe(section.elem)
         }
