@@ -23,9 +23,9 @@ const items = [
     job: "Business Management System",
     title: " Enterprise Resource Planning (ERP)",
     desc1:
-      "Built to streamline business operations with features like asset management, task management, and secure authentication. Its intuitive admin dashboard provides real-time insights and control, enhancing decision-making.",
+      "Streamlines business operations with asset and task management features, secure authentication, and an intuitive admin dashboard for real-time insights and control. ",
     desc2:
-      "Implemented live notifications keep users updated on important events. Ongoing development aims to add new functionalities, making it an adaptable solution for businesses to optimize resource management and efficiency.",
+      "Aims to revolutionize the construction industry by improving project oversight and resource allocation, ultimately driving increased productivity and cost savings across construction projects.",
     img: erp,
     link: "",
     technologies: [
@@ -44,7 +44,7 @@ const items = [
     desc1:
       "Changi Airport Group's B2B program connecting global travel trade partners with Changi Airport.  Offering an array of features catering to both B2B and B2C users such as personalized favorites, convenient downloads, and efficient account management, alongside a comprehensive global search function. ",
     desc2:
-      "Leveraging our CMS, content is dynamically tailored to each user's preferences and demographics, ensuring an engaging and personalized experience for all.",
+      "Leveraging a fully customized CMS, content is dynamically tailored to each user's preferences and demographics, ensuring an engaging and personalized experience for all users.",
     img: ctc,
     link: "https://travelcircle.changiairport.com/",
     technologies: [
@@ -78,7 +78,7 @@ const items = [
     job: "Business Management System",
     title: "Supply Chain Management Platform",
     desc1:
-      " With key features including Inventory Management, Supplier Management, Procurement, and Store Stock Management, this platform offers comprehensive tools to streamline operations and enhance efficiency.",
+      "With key features including Inventory Management, Supplier Management, Procurement, and Store Stock Management, this platform offers comprehensive tools to streamline operations and enhance efficiency.",
     desc2:
       "From tracking inventory levels to managing supplier relationships and procurement processes, this platform handles complex functionality with ease, empowering businesses to stay competitive in today's fast-paced market.",
     img: scm,

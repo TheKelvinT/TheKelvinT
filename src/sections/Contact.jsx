@@ -18,10 +18,13 @@ const Contact = () => {
           className="mb-8 flex flex-col items-center gap-4"
         >
           <PageIndex>05. Get in Touch</PageIndex>
-          <HeaderText>Reach out to me</HeaderText>
+          <HeaderText>
+            Interested in Collaborating?{" "}
+            <span className="hidden md:block">Reach Out!</span>
+          </HeaderText>
         </motion.div>
 
-        <div className="flex flex-col items-center gap-y-6 text-dark-gray font-spacemono text-base ">
+        <div className="flex flex-col items-center gap-y-8 text-dark-gray font-spacemono text-base ">
           <motion.a
             href="https://www.linkedin.com/in/the-kelvin-tan/"
             target="_blank"
@@ -100,7 +103,7 @@ const Contact = () => {
             }}
             className="flex justify-center items-center gap-4 sm:gap-8 py-3 px-6 border border-dark-gray rounded transition duration-500 hover:text-primary hover:border-primary"
           >
-            <span>Stalk Me On Github</span>
+            <span>Check Out My Github</span>
             <span>
               <svg
                 className="fill-current"

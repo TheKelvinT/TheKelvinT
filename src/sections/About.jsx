@@ -91,16 +91,13 @@ const About = () => {
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className=" leading-6 text-sm mb-7 "
+        className=" leading-7 text-sm mb-7 "
       >
-        Hi there! I'm a frontend developer with a team-driven mindset and an
-        unwavering passion for building user-friendly and visually captivating
-        websites. I've sharpened my skills in HTML, CSS, and JavaScript through
-        my rigorous attention to detail and exceptional problem-solving
-        abilities. I'm constantly seeking out new challenges and opportunities
-        to enhance my knowledge and expertise. I'm excited to collaborate and
-        join forces with fellow creators to develop outstanding digital
-        experiences that leave a lasting impression.
+        Hi there! I'm a Software Engineer passionate about creating
+        user-friendly and visually appealing websites. With strong skills in
+        HTML, CSS, and JavaScript, I excel in attention to detail and
+        problem-solving. Eager to tackle new challenges and collaborate with
+        others, I'm focused on crafting outstanding digital experiences.
       </motion.p>
       <div className="flex justify-center gap-x-12 gap-y-6 lg:gap-y-6 flex-wrap font-spacemono text-xs mb-8">
         {techstack.map((item, index) => (
