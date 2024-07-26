@@ -117,7 +117,11 @@ const About = () => {
             className="flex items-center gap-2"
           >
             <span key={item.name}>
-              <img src={item.icon} alt={item.name} className="h-10  w-10" />
+              <img
+                src={item.icon}
+                alt={item.name}
+                className="h-8 w-10 md:h-8  md:w-auto "
+              />
             </span>
           </motion.div>
         ))}
